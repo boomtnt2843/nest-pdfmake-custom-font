@@ -1,10 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import * as fs from 'fs';
-import * as pdfMake from 'pdfmake/build/pdfmake';
-import * as pdfFonts from 'pdfmake/build/vfs_fonts';
 import * as pdfMakePrinter from 'pdfmake/src/printer';
-
-pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 @Injectable()
 export class PdfService {
